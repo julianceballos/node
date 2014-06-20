@@ -5,11 +5,11 @@ Node
 
 ### Table of contents
 
-1. [Project architecture](#)
-1. [Main file](#)
-1. [Config files management](#)
-1. [Files content structure](#)
-1. [Global data](#)
+1. [Project architecture](#project-architecture)
+1. [Main file](#main-file)
+1. [Config files management](#config-files-management)
+1. [Files content structure](#files-content-structure)
+1. [Global data](#global-data)
 
 ### Project architecture
 
