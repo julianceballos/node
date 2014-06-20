@@ -43,6 +43,7 @@ Use a folder called cfg with many files as you require to manage different param
 For example:
 
 ```sh
+.
 └── cfg/
      └── development.js
      └── production.js
