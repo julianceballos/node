@@ -5,15 +5,15 @@ Node
 
 ### Table of contents
 
-1. Project architecture
-2. Main file
-3. Config files management
-4. Files content structure
-5. Global data
+1. [Project architecture](#)
+1. [Main file](#)
+1. [Config files management](#)
+1. [Files content structure](#)
+1. [Global data](#)
 
 ### Project architecture
 
-We suggest the next architecture for your node project, to help you make undestandable project for your current and future contributors.
+We suggest the next architecture for your node project, these suggestons are to help you make it understandable.
 
 ```sh
 .
@@ -28,7 +28,7 @@ We suggest the next architecture for your node project, to help you make undesta
 
 ### Main file
 
-We suggest name the main file as index.js, this just as a similar for an website that starts with index.html and change the project root directory for keep the root path all the subfolders along with process.cwd() function.
+To know which is the main file on your project, we recommend name it as index.js simulating the main file of web project, also in the index.js file, we suggest declare the root directory change code, to set the project directory on the function process.cwd().
 
 ```javascript
 //Change the root path for all project
@@ -36,11 +36,9 @@ process.chroot(__dirname);
 
 ```
 
-
-
 ### Config files management
 
-We suggest you to use a folder called cfg with many files as you require to manage different config params.
+Use a folder called cfg with many files as you require to manage different params for specific environments.
 
 For example:
 
@@ -51,7 +49,7 @@ For example:
      └── testing.js
 ```
 
-And you must write a file that would include code to manage the files to return analyzing the NODE_ENV variable on your OS.
+When you have the cfg folder, you must write a file that include code to manage the files to return analyzing the NODE_ENV variable on your OS, which you could set as "development", "production" or "testing".
 
 ```javascript
 module.exports = (function(env) {
@@ -81,7 +79,7 @@ var mylib1 = require(process.cwd() + '/lib/mylib1'),
 
 ### Global data
 
-We suggest you to write a file global.js that helps you to keep global variables, all the project along and use it on your response returns.
+We suggest you to write a file global.js that helps you to keep global variables, all the project along and use it on your response sending.
 
 The content in global.js, , for example:
 
@@ -101,5 +99,3 @@ module.exports = function(req) {
     return data;
 }
 ```
-
-
