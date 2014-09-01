@@ -19,7 +19,7 @@ We suggest the next architecture for your node project, these suggestons are to 
 .
 ├── index.js
 ├── globals.js
-├── config.js
+├── conf.js
 ├── lib/
 └── cfg/
      └── development.js
@@ -54,7 +54,7 @@ When you have the cfg folder, you must write a file that include code to manage 
 
 ```javascript
 module.exports = (function(env) {
-  return require('./config/' + env + '.js');
+  return require('./cfg/' + env + '.js');
 })((process.env.NODE_ENV || 'development'));
 
 ```
